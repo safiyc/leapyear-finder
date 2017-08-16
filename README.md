@@ -15,7 +15,7 @@ divisible by 4
 * input: 2004
 * output: true
 
-divisible by 100
+NOT- divisible by 100
 * input: 1900
 * output: false
 

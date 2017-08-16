@@ -1,9 +1,9 @@
 // business logic:
 var leapYear = function(year) {
   if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)) {
-    return ("Sure, it's a leap year");
+    return true;
   } else {
-  return ("Nope, not a leap year");
+  return false;
   }
 };
 
@@ -13,6 +13,15 @@ $(document).ready(function() {
     event.preventDefault();
     var year = parseInt($("input#year").val());
     var result = leapYear(year);
-    $("#result-displayed").text(result + "!");
+
+
+    if (result === false) {
+      $(".not").text("not");
+    } else {
+      $(".not").text("");
+    }
+
+    $(".year").text(year);
+    $("#result-displayed").show();
   });
 });

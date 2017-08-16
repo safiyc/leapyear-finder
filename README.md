@@ -1,5 +1,3 @@
-Behavior-Driven Development:
-
 leap year:
 -evenly divisible by 4
 -evenly divisible by 400

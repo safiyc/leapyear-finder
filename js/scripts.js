@@ -1,11 +1,9 @@
 // business logic:
 var leapYear = function(year) {
-  if (year % 4 === 0) {
-    return true;
-  } else if (year % 400 === 0) {
-    return true;
+  if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)) {
+    return ("Sure, it's a leap year");
   } else {
-  return false;
+  return ("Nope, not a leap year");
   }
 };
 
